@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 模板</title>
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+<body>
+
+    <div id="root">
+        <h1>你好，世界！{{name}}</h1>
+    </div>
+
+    <script type="text/javascript">
+        Vue.config.productionTip = false;
+
+        const vm = new Vue({
+            el:'#root',
+            data:{
+                name:'Vue'
+            }
+        })
+    </script>
+</body>
+</html>
